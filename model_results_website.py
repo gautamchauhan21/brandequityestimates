@@ -172,7 +172,7 @@ def main():
             st.write(f"Showing data for: {selected_value}")
             # Define the data for the datafram
             data = {
-            'Land and water pollution': ['0.188 (3.615)', '-0.0187 (0.0144)', '-0.00931 (0.0233)', '-0.0338** (0.0140)']}
+            'Air pollution + GHG emissions': ['0.188 (3.615)', '-0.0187 (0.0144)', '-0.00931 (0.0233)', '-0.0338** (0.0140)']}
 
             # Define the row labels for the dataframe
             index = ['Environmental footprint', 'Environmental footprint × CSR reputation',
@@ -185,7 +185,7 @@ def main():
             st.write(f"Showing data for: {selected_value}")
             # Define the data for the datafram
             data = {
-            'Land and water pollution': ['4.502 (6.564)', '0.0290 (0.0417)', '0.0101 (0.0572)', '-0.0145 (0.0191)']}
+            'Waste': ['4.502 (6.564)', '0.0290 (0.0417)', '0.0101 (0.0572)', '-0.0145 (0.0191)']}
 
             # Define the row labels for the dataframe
             index = ['Environmental footprint', 'Environmental footprint × CSR reputation',
@@ -198,7 +198,7 @@ def main():
             st.write(f"Showing data for: {selected_value}")
             # Define the data for the datafram
             data = {
-            'Land and water pollution': ['-1.279*** (0.108)', '-0.0207** (0.00808)', '-0.00983 (0.0123)', '-0.0191* (0.0112)']}
+            'Water use': ['-1.279*** (0.108)', '-0.0207** (0.00808)', '-0.00983 (0.0123)', '-0.0191* (0.0112)']}
 
             # Define the row labels for the dataframe
             index = ['Environmental footprint', 'Environmental footprint × CSR reputation',
@@ -211,7 +211,7 @@ def main():
             st.write(f"Showing data for: {selected_value}")
             # Define the data for the datafram
             data = {
-            'Land and water pollution': ['2.278 (3.613)', '-0.143 (0.204)', '0.0418 (0.223)', '-0.174 (0.174)']}
+            'Other natural resource use': ['2.278 (3.613)', '-0.143 (0.204)', '0.0418 (0.223)', '-0.174 (0.174)']}
 
             # Define the row labels for the dataframe
             index = ['Environmental footprint', 'Environmental footprint × CSR reputation',
@@ -220,6 +220,7 @@ def main():
             df = pd.DataFrame(data = data, index = index)
             st.table(df)
 
+## tab 4
     elif selected_tab == "Mediating effects":
         selected_value_first = st.selectbox("Mediating variable", ["Brand equity", "Brand stature"])
         selected_value_second = st.selectbox("Performance variable", [None, "Accounting", "Financial"])
