@@ -139,7 +139,7 @@ def main():
             st.write(f"Showing data for: {selected_value}")
 
             data = {
-            'Brand stature': ['-0.204 (0.278)', '-0.0296** (0.0135)', '-0.0252 (0.0186)', '-0.0296 (0.0186)']}
+            'Brand strength': ['-0.204 (0.278)', '-0.0296** (0.0135)', '-0.0252 (0.0186)', '-0.0296 (0.0186)']}
 
             # Define the row labels for the dataframe
             index = ['Environmental footprint', 'Environmental footprint × CSR reputation',
